@@ -1,0 +1,898 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Онлайн гра про Україну - UKRAINE GTA</title>
+<meta name="description" content="Це онлайн гра про нашу країну, зі справжніми авто, містами, реальними роботами! У нас ти зможеш відчути всю атмосферу української гри та українських гравців!">
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+
+
+<script src="cdn-cgi/apps/head/xl-50JXIwRzfx8zmmYg3QRa2Wps.js"></script><style type="text/css">@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/vietnamese/opsz/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic/opsz/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic-ext/opsz/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin/opsz/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin-ext/opsz/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic/opsz/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic-ext/opsz/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin-ext/opsz/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin/opsz/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/vietnamese/opsz/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="25faa895d41e157ac72419b5-module" crossorigin="" src="assets/js/main.js?updated"></script>
+<script src="jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" type="25faa895d41e157ac72419b5-text/javascript"></script>
+<script src="ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="25faa895d41e157ac72419b5-text/javascript"></script>
+<script async="" src="gtag/js?id=G-0BX207J77G" type="25faa895d41e157ac72419b5-text/javascript"></script>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="manifest" href="webmanifest.php.html">
+<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<script type="25faa895d41e157ac72419b5-text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-0BX207J77G');
+		</script>
+<div class="wrapper">
+<header class="header">
+<div class="header__container">
+<div class="header__left">
+<a href="index.htm" class="header__logo">
+<img loading="lazy" src="images/main-img/logo.png" alt="Logotype">
+</a>
+<div class="header__menu menu">
+<nav class="menu__body">
+<ul class="menu__list">
+<li class="menu__item">
+<a href="index.htm" class="menu__link">
+<svg>
+<use xlink:href="#icon-home"></use>
+</svg>
+Головна
+</a>
+</li>
+<li class="menu__item">
+<a href="https://forum.ukraine-gta.com.ua/" class="menu__link">
+<svg>
+<use xlink:href="#icon-forum"></use>
+</svg>
+Форум
+</a>
+</li>
+<li class="menu__item">
+<a href="donate.html" class="menu__link">
+<svg>
+<use xlink:href="#icon-shop"></use>
+</svg>
+Ігровий магазин
+</a>
+</li>
+</ul>
+</nav>
+<div class="menu__mob">
+<div class="header__lang">
+<select data-class-modif="lang" name="form[]" class="form">
+<option data-href="#" data-asset="/images/ukr.svg" value="1" selected="">Українська
+</option>
+
+</select>
+</div>
+<a href="cabinet/login.html" class="button button--primary">
+<img loading="lazy" src="images/svg/user.svg" alt="ОСОБИСТИЙ КАБІНЕТ">
+ОСОБИСТИЙ КАБІНЕТ
+</a>
+</div>
+</div>
+</div>
+<div class="header__right">
+<div class="header__lang">
+<select data-class-modif="lang" name="form[]" class="form">
+<option data-href="#" data-asset="/images/ukr.svg" value="1" selected="">Українська</option>
+
+</select>
+</div>
+<a href="cabinet/login.html" class="button button--primary">
+<img loading="lazy" src="images/svg/user.svg" alt="ОСОБИСТИЙ КАБІНЕТ">
+ОСОБИСТИЙ КАБІНЕТ
+</a>
+</div>
+<div class="header__right-mob">
+<div data-btn-menu="" class="header__button-menu-wrap">
+<button class="header__button-menu">
+<span></span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="page">
+<section data-animate-text="" class="main-block">
+<div class="main-block__decor">
+<img class="ibg" src="images/decor.png" alt="Decor">
+</div>
+<div class="main-block__container">
+<div class="main-block__wrap">
+<div class="main-block__content">
+<div class="main-block__image main-block__image--default">
+<img srcset="images/main-img%402x.png 2x" class="ibg" src="images/main-img.png" alt="Mans">
+</div>
+<div class="main-block__image main-block__image--active">
+<img srcset="images/main-img-active%402x.png 2x" class="ibg" src="images/main-img-active.png" alt="Mans">
+</div>
+<h1 data-animate-text-item="" class="main-block__title"> ОНЛАЙН ГРА
+<span class="text-gradient">
+ПРО УКРАЇНУ!
+</span>
+</h1>
+<div data-animate-text-item="" class="main-block__description">
+<b>UKRAINE GTA</b> - це реалістична онлайн гра про нашу країну, в якій відтворена вся краса
+наших
+міст,
+справжніх авто, де ти зможеш попрацювати на реально крутих роботах. Запрошуємо тебе відчути
+цю
+теплу атмосферу української гри та знайти серед українських гравців справжніх друзів!
+</div>
+<div class="main-block__bottom">
+<div class="main-block__players">
+<div class="main-block__players-count">
+<p>
+<svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="5.5" cy="5.5" r="5.5" fill="#7DC452" fill-opacity="0.3"></circle>
+<circle cx="5.5" cy="5.5" r="2.5" fill="#7DC452"></circle>
+</svg>
+3314+
+</p>
+</div>
+<div class="main-block__players-text">
+АКТИВНИХ <br> ГРАВЦІВ
+</div>
+</div>
+<div class="main-block__buttons">
+<a href="uagta_1_9_6.exe" download="ukrainegta-launcher.exe" class="button button--primary main-block__start-game">
+<img loading="lazy" src="images/svg/play.svg" alt="Download">
+РОЗПОЧАТИ
+ГРУ</a>
+<a href="https://www.youtube.com/watch?v=gCf7T70l-e0" rel="nofollow" target="_blank" class="button button--outlined">
+<img loading="lazy" src="images/svg/video.svg" alt="Promo">
+ДІЗНАТИСЬ БІЛЬШЕ</a>
+</div>
+<div class="main-block__windows">
+<img loading="lazy" src="images/svg/windows.svg" alt="Only for windows">
+Доступно тільки <br> для Windows
+</div>
+</div>
+</div>
+<div class="main-block__servers">
+<div class="main-block__server">
+<div class="main-block__server-number">
+1
+</div>
+<div class="main-block__server-info">
+<div class="main-block__server-name">Центральна Україна</div>
+<div class="main-block__server-graph">
+<div class="main-block__server-line">
+<span style="width: 100%"></span>
+</div>
+<div class="main-block__server-count">
+<div class="main-block__server-status main-block__server-status--online">
+</div>
+<p><span>700</span>/700</p>
+</div>
+</div>
+</div>
+</div>
+<div class="main-block__server">
+<div class="main-block__server-number">
+2
+</div>
+<div class="main-block__server-info">
+<div class="main-block__server-name">Західна Україна</div>
+<div class="main-block__server-graph">
+<div class="main-block__server-line">
+<span style="width: 100%"></span>
+</div>
+<div class="main-block__server-count">
+<div class="main-block__server-status main-block__server-status--online">
+</div>
+<p><span>700</span>/700</p>
+</div>
+</div>
+</div>
+</div>
+<div class="main-block__server">
+<div class="main-block__server-number">
+3
+</div>
+<div class="main-block__server-info">
+<div class="main-block__server-name">Східна Україна</div>
+<div class="main-block__server-graph">
+<div class="main-block__server-line">
+<span style="width: 92.142857142857%"></span>
+</div>
+<div class="main-block__server-count">
+<div class="main-block__server-status main-block__server-status--online">
+</div>
+<p><span>645</span>/700</p>
+</div>
+</div>
+</div>
+</div>
+<div class="main-block__server">
+<div class="main-block__server-number">
+4
+</div>
+<div class="main-block__server-info">
+<div class="main-block__server-name">Північна Україна</div>
+<div class="main-block__server-graph">
+<div class="main-block__server-line">
+<span style="width: 94.428571428571%"></span>
+</div>
+<div class="main-block__server-count">
+<div class="main-block__server-status main-block__server-status--online">
+</div>
+<p><span>661</span>/700</p>
+</div>
+</div>
+</div>
+</div>
+<div class="main-block__server">
+<div class="main-block__server-number">
+5
+</div>
+<div class="main-block__server-info">
+<div class="main-block__server-name">Південна Україна</div>
+<div class="main-block__server-graph">
+<div class="main-block__server-line">
+<span style="width: 86%"></span>
+</div>
+<div class="main-block__server-count">
+<div class="main-block__server-status main-block__server-status--online">
+</div>
+<p><span>602</span>/700</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="main-block__all-server button button--outlined">
+<span class="hidden">Приховати</span><span class="visible">Показати</span>всі сервери
+</button>
+</div>
+</div>
+</section>
+<section data-animate-text="" class="why">
+<div class="why__container">
+<h2 data-animate-text-item="" class="title">
+<span class="title__white">
+ЧОМУ
+</span>
+<span class="text-gradient">
+ВАРТО ГРАТИ
+</span> <span class="title__white">В</span>
+<br>
+<span class="text-gradient">
+UKRAINE GTA
+</span>
+</h2>
+<div class="why__items">
+<div class="why__item">
+<div class="why__item-content">
+<div class="why__item-eyebrow">
+<span class="text-gradient">Перший факт</span>
+</div>
+<h4 class="why__item-title">УКРАЇНСЬКА МАПА</h4>
+<div class="why__item-description"><p>Ми розробляємо власну, унікальну карту вже майже рік.
+З
+перших хвилин гри ти зрозумієш, що знаходишся у рідній Україні, хоч і насправді
+перебуваєш за тисячі кілометрів від дому.</p>
+<p>Зараз у грі є такі міста:</p>
+</div>
+<div class="why__item-tags">
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Kyiv">
+<span>Київ</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Kharkiv">
+<span>Харків</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Dnipro">
+<span>Дніпро</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Boryspil">
+<span>Бориспіль</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Koncha-Zaspa">
+<span>Конча-Заспа</span>
+</div>
+
+</div>
+</div>
+<div class="why__item-image">
+<img loading="lazy" class="ibg" src="images/map.png" alt="Screen 1">
+</div>
+</div>
+<div class="why__item why__item--reverse">
+<div class="why__item-content">
+<div class="why__item-eyebrow">
+<span class="text-gradient">Другий факт</span>
+</div>
+<h4 class="why__item-title">РЕАЛЬНІ РОБОТИ <br> ТА ПРОФЕСІЇ</h4>
+<div class="why__item-description"><p>Величезний вибір робіт для новачків та гравців із досвідом. Працюй у різних державних установах: від генерала СБУ чи НПУ до слуги народу, стань міським головою та очоль місто. Або піди служити в ЗСУ — обороняй свою маленьку країну в UKRAINE GTA. Подобається кримінал, є навіть і таке, викрадай елітні авто, але не потрапляй до рук поліції. Ти можеш стати будь-ким, тисячі професій таких як:</p>
+</div>
+<div class="why__item-tags">
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Jobs">
+<span>Далекобійник</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Jobs">
+<span>Машиніст</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Jobs">
+<span>Таксист</span>
+</div>
+<div class="why__item-tag">
+<img loading="lazy" src="images/svg/city.svg" alt="Jobs">
+<span>Фермер</span>
+</div>
+<div class="why__item-tag why__item-tag--other">
+<img loading="lazy" src="images/svg/other.svg" alt="Jobs">
+<span>та інші..</span>
+</div>
+</div>
+</div>
+<div class="why__item-image">
+<img loading="lazy" class="ibg" src="images/jobs.png" alt="Screen 2">
+</div>
+</div>
+<div class="why__item why__item--column">
+<div class="why__item-content">
+<div class="why__item-decor">
+<img loading="lazy" src="images/cars.png" alt="Cars">
+</div>
+<div class="why__item-eyebrow">
+<span class="text-gradient">Третій факт</span>
+</div>
+<h4 class="why__item-title">ВІТЧИЗНЯНІ ТА <br>ІМПОРТНІ АВТОМОБІЛІ</h4>
+<div class="why__item-description">
+<p> В UKRAINE GTA ви можете знайти величезний вибір автомобілів, який задовольнить будь-який смак. Від вітчизняних моделей, що вражають надійністю та доступністю у ремонті, до імпортних авто з передовими технологіями та елегантним дизайном – у грі ви знайдете все, що потрібно для захоплюючих перегонів та випробування себе на дорозі.</p>
+</div>
+</div>
+<div class="why__item-image">
+<img loading="lazy" class="ibg" src="images/cars-big.png" alt="Screen 3">
+</div>
+</div>
+<div class="why__item">
+<div class="why__item-content">
+<div class="why__item-eyebrow">
+<span class="text-gradient">Четвертий факт</span>
+</div>
+<h4 class="why__item-title">АТМОСФЕРА ТА КОРИСТЬ</h4>
+<div class="why__item-image-small">
+<img loading="lazy" src="images/svg/graph.svg" alt="Graphic">
+</div>
+</div>
+<div class="why__item-image">
+<img loading="lazy" class="ibg" src="images/big-img.jpg" alt="Screen 4">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-animate-text="" class="how" id="how">
+<div class="how__container">
+<h2 data-animate-text-item="" class="title">
+<span class="title__white">
+як
+</span>
+<span class="text-gradient">
+ЗАВАНТАЖИТИ ГРУ
+</span>
+</h2>
+<div class="how__row">
+<div class="how__image">
+<img loading="lazy" srcset="images/how%402x.png 2x" src="images/how.png" alt="How to play">
+</div>
+<div class="how__content">
+<h4 class="how__title2">
+РОЗПОЧАТИ ГРУ<br>ДУЖЕ ЛЕГКО!
+</h4>
+<div class="how__description">
+Інсталюйте наш лаунчер та ознайомтесь з інструкцією нижче!
+</div>
+<div class="how__head">
+<a href="uagta_1_9_6.exe" download="ukrainegta-launcher.exe" class="button button--primary">
+<img loading="lazy" src="images/svg/play.svg" alt="Download">
+ЗАВАНТАЖИТИ ЛАУНЧЕР
+</a>
+<div class="how__label-windows">
+<img loading="lazy" src="images/svg/windows.svg" alt="Only for windows">
+<span>Доступно тільки <br> для Windows</span>
+</div>
+</div>
+<div class="how__instruction">
+<div class="how__instruction-title">
+<span class="text-gradient">Інструкція</span>
+</div>
+<div class="how__instruction-items">
+<div class="how__instruction-item how__instruction-item--active">
+<div class="how__instruction-square"></div>
+<div class="how__instruction-text">
+Натисніть на кнопку "Завантажити", після чого у вас завантажиться .exe файл.
+</div>
+</div>
+<div class="how__instruction-item">
+<div class="how__instruction-square"></div>
+<div class="how__instruction-text">
+Відкрийте його та пройдіть інсталяцію. З грою у вас встановляться два драйвери, якщо у вас вони вже встановлені, то їх можна не завантажувати.
+</div>
+</div>
+<div class="how__instruction-item">
+<div class="how__instruction-square"></div>
+<div class="how__instruction-text">
+Зайдіть до ігрового лаунчера та завантажте файли самої гри, під час встановлення
+не закривайте лаунчер.
+</div>
+</div>
+<div class="how__instruction-item">
+<div class="how__instruction-square"></div>
+<div class="how__instruction-text">
+Після завершення встановлення оберіть сервер, на якому хочете грати і заходьте в
+гру!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-spollers="" class="how__requirements">
+<details>
+<summary class="how__requirements-title">
+<span class="how__requirements-title-left">
+<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="3" width="21" height="18" rx="4"></rect>
+<mask id="mask0_3_16072" x="2" y="3" width="21" height="18">
+<rect x="2" y="3" width="21" height="18" rx="4"></rect>
+</mask>
+<g mask="url(#mask0_3_16072)">
+<rect width="21" height="19" transform="matrix(1 0 0 -1 2 22)" fill="white" fill-opacity="0.4"></rect>
+</g>
+<path d="M3.77384 14V9.1H5.13184V10.934H6.87484V9.1H8.23284V14H6.87484V12.138H5.13184V14H3.77384ZM9.12704 14V9.1H10.492V14H9.12704ZM13.8881 14.098C13.1181 14.098 12.4811 13.86 11.9771 13.384C11.4731 12.9033 11.2211 12.292 11.2211 11.55C11.2211 10.8313 11.4707 10.227 11.9701 9.737C12.4741 9.247 13.1041 9.002 13.8601 9.002C14.6347 9.002 15.2974 9.24 15.8481 9.716L15.0501 10.675C14.6814 10.367 14.2871 10.213 13.8671 10.213C13.5124 10.213 13.2137 10.3437 12.9711 10.605C12.7331 10.8663 12.6141 11.1883 12.6141 11.571C12.6141 11.9677 12.7377 12.2943 12.9851 12.551C13.2371 12.803 13.5567 12.929 13.9441 12.929C14.2614 12.929 14.5227 12.8613 14.7281 12.726V12.131H13.7621V11.137H16.0161V13.342C15.4047 13.846 14.6954 14.098 13.8881 14.098ZM16.769 14V9.1H18.127V10.934H19.87V9.1H21.228V14H19.87V12.138H18.127V14H16.769Z" fill="white"></path>
+</svg>
+СИСТЕМНІ ВИМОГИ
+</span>
+<span class="how__requirements-icon">
+</span>
+</summary>
+<div class="how__requirements-body">
+<div class="how__requirements-row">
+<div class="how__requirements-block">
+<div class="how__requirements-block-head">
+<img loading="lazy" src="images/svg/low.svg" alt="System requirements"> Мінімальні
+</div>
+<div class="how__requirements-items">
+<div class="how__requirements-item">
+<div class="how__requirements-label">Операційна система</div>
+<div class="how__requirements-value">
+Windows 7 SP1 x64 та вище
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Процесор</div>
+<div class="how__requirements-value">
+Intel Core 2 Duo 2.2 GHz / AMD Phenom 2.2 GHz
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Відеокарта</div>
+<div class="how__requirements-value">
+GTX 550 TI, ATI Radeon HD 4800
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Оперативна пам'ять</div>
+<div class="how__requirements-value">
+8ГБ DDR2
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Роздільна здатність екрану</div>
+<div class="how__requirements-value">
+1280х720
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Звукова карта</div>
+<div class="how__requirements-value">
+Сумісна з DirectX 9
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Інтернет-з'єднання</div>
+<div class="how__requirements-value">
+8 мбіт/сек
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Вільне місце на накопичувачі</div>
+<div class="how__requirements-value">
+15 ГБ
+</div>
+</div>
+</div>
+</div>
+<div class="how__requirements-block">
+<div class="how__requirements-block-head">
+<img loading="lazy" src="images/svg/med.svg" alt=""> Рекомендовані
+</div>
+<div class="how__requirements-items">
+<div class="how__requirements-item">
+<div class="how__requirements-label">Операційна система</div>
+<div class="how__requirements-value">
+Windows 11 x64
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Процесор</div>
+<div class="how__requirements-value">
+Intel Core i5 3GHz, AMD Ryzen 3GHz
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Відеокарта</div>
+<div class="how__requirements-value">
+GTX 760 TI, ATI Radeon HD 4800
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Оперативна пам'ять</div>
+<div class="how__requirements-value">
+16ГБ DDR3
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Роздільна здатність екрану</div>
+<div class="how__requirements-value">
+1920х1080
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Звукова карта</div>
+<div class="how__requirements-value">
+Сумісна з DirectX 9
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Інтернет-з'єднання</div>
+<div class="how__requirements-value">
+100 мбіт/сек
+</div>
+</div>
+<div class="how__requirements-item">
+<div class="how__requirements-label">Вільне місце на накопичувачі</div>
+<div class="how__requirements-value">
+15 ГБ
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section data-animate-text="" class="news">
+<div class="news__container">
+<h2 data-animate-text-item="" class="title">
+<span class="text-gradient">
+НОВИНИ
+</span>
+<span class="title__white">
+ПРОЄКТУ
+</span>
+</h2>
+<div class="news__slider swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="https://forum.ukraine-gta.com.ua/threads/%D0%9F%D0%9E%D0%A2%D0%AF%D0%93%D0%98-%D0%A2%D0%90-%D0%9F%D0%9E%D0%A2%D0%95%D0%9D%D0%A6%D0%86%D0%90%D0%9B.131584/" target="_blank" class="news__item">
+<div class="news__item-image">
+<img loading="lazy" class="ibg" src="images/news/21-update.png" alt="UKRAINE GTA 2.1 - ПОТЯГИ ТА ПОТЕНЦІАЛ">
+</div>
+<div class="news__item-content">
+<h4 class="news__item-title">ПОТЯГИ ТА ПОТЕНЦІАЛ</h4>
+<div class="news__item-text">
+<p>У цій статті ми розглянемо оновлену бізнес-систему, нову фракцію, останні автомобілі та безліч інших вражаючих аспектів. Готуйтеся до дивовижної подорожі через світ нововведень, де кожен крок - це можливість відкрити щось нове та інноваційне!</p>
+</div>
+<div class="news__item-row">
+<div class="news__item-date">11.02.2023</div>
+<div class="news__item-link">Детальніше</div>
+</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://forum.ukraine-gta.com.ua/threads/ukraine-gta-2-0-%D0%A2%D0%90-%D0%97%D0%98%D0%9C%D0%9E%D0%92%D0%98%D0%99-%D0%86%D0%92%D0%95%D0%9D%D0%A2-%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%94%A5.109619/" target="_blank" class="news__item">
+<div class="news__item-image">
+<img loading="lazy" class="ibg" src="images/news/17.png" alt="UKRAINE GTA 2.0 DEMO">
+</div>
+<div class="news__item-content">
+<h4 class="news__item-title">UKRAINE GTA 2.0 DEMO</h4>
+<div class="news__item-text">
+<p>В світі відеоігор постійно відбуваються зміни, що розширюють можливості гравців та надають нові враження від гри. Одним з таких оновлень стало "UKRAINE GTA 2.0", що значно розширює світ гри та додає нові можливості для ігрового досвіду.</p>
+</div>
+<div class="news__item-row">
+<div class="news__item-date">24.12.2023</div>
+<div class="news__item-link">Детальніше</div>
+</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://forum.ukraine-gta.com.ua/threads/%D0%9C%D0%90%D0%99%D0%A1%D0%A2%D0%95%D0%A0%D0%9D%D0%86%D0%A1%D0%A2%D0%AC-%D0%9A%D0%A0%D0%90%D0%A4%D0%A2%D0%A3-%D0%BD%D0%B0-ukraine-gta.82165/" target="_blank" class="news__item">
+<div class="news__item-image">
+<img loading="lazy" class="ibg" src="images/news/1210.png" alt="МАЙСТЕРНІСТЬ КРАФТУ">
+</div>
+<div class="news__item-content">
+<h4 class="news__item-title">МАЙСТЕРНІСТЬ КРАФТУ</h4>
+<div class="news__item-text">
+<p>Поспішаємо повідомити інформацію про нове оновлення: на вас чекають захопливі пригоди у пошуках скарбів, оновлена риболовля та полювання, а ще повністю новий інвентар. Відтепер будь-який товар ви зможете продати на великому ринку.</p>
+</div>
+<div class="news__item-row">
+<div class="news__item-date">12.10.2023</div>
+<div class="news__item-link">Детальніше</div>
+</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://forum.ukraine-gta.com.ua/threads/%D0%A4%D0%86%D0%9D%D0%90%D0%9D%D0%A1%D0%9E%D0%92%D0%90-%D0%9E%D0%A1%D0%86%D0%9D%D0%AC-%D0%BD%D0%B0-ukraine-gta.72076/" target="_blank" class="news__item">
+<div class="news__item-image">
+<img loading="lazy" class="ibg" src="images/news/c0d793156e17fd6ebb502ec53f472571.png" alt="ФІНАНСОВА ОСІНЬ">
+</div>
+<div class="news__item-content">
+<h4 class="news__item-title">ФІНАНСОВА ОСІНЬ</h4>
+<div class="news__item-text">
+<p>Вітаємо, гравці Ukraine GTA! Хочемо коротенько вас ознайомити, які зміни відбулись у грі, розповісти про старт нового осіннього сезону, де буде ще більше крутих та призових завдань, новий батлпасс, новий банк у грі з можливістью депозиту.</p>
+</div>
+<div class="news__item-row">
+<div class="news__item-date">20.09.2023</div>
+<div class="news__item-link">Детальніше</div>
+</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="article/onovlennya--straykbol--vzhe-u-gri-.html" target="_blank" class="news__item">
+<div class="news__item-image">
+<img loading="lazy" class="ibg" src="images/news/37a8acb6063912268d215fd48c2960c7.png" alt="Оновлення СтрайкБол вже у грі!">
+</div>
+<div class="news__item-content">
+<h4 class="news__item-title">Оновлення "СтрайкБол"</h4>
+<div class="news__item-text">
+<p>Несподіване мініоновлення для любителів постріляти, доступно в грі! Саму локацію можна знайти в навігації -> Цікаві місця -> Страйкбол. Тепер не потрібно чекати івенту, щоб простріляти. Берете друзів прямуєте на локацію та все у ваших руках.</p>
+</div>
+<div class="news__item-row">
+<div class="news__item-date">06.08.2023</div>
+<div class="news__item-link">Детальніше</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-animate-text="" data-gallery="" class="gallery">
+<div class="gallery__container">
+<div class="gallery__top-row">
+<div class="gallery__head">
+<div class="gallery__head-image">
+<img loading="lazy" src="images/gallery-head.png" alt="Gallery">
+</div>
+<h2 data-animate-text-item="" class="gallery__title title">
+<span class="text-gradient">
+ГАЛЕРЕЯ
+</span>
+<span class="title__white">
+НАШИХ ГРАВЦІВ
+</span>
+</h2>
+</div>
+<div class="gallery__first-block">
+<a data-gallery-item="" href="images/gallery/6.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/6.png" alt="">
+</a>
+<a data-gallery-item="" href="images/gallery/5.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/5.png" alt="">
+</a>
+</div>
+</div>
+<div class="gallery__bottom-row">
+<div class="gallery__second-block">
+<a data-gallery-item="" href="images/gallery/1.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/1.png" alt="">
+</a>
+</div>
+<div class="gallery__third-block">
+<a data-gallery-item="" href="images/gallery/3.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/3.png" alt="">
+</a>
+<a data-gallery-item="" href="images/gallery/4.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/4.png" alt="">
+</a>
+</div>
+<div class="gallery__four-block">
+<a data-gallery-item="" href="images/gallery/7.png" class="gallery__image">
+<span class="gallery__image-btn">
+<img loading="lazy" src="images/svg/btn2.svg" alt="">
+</span>
+<img loading="lazy" class="ibg" src="images/gallery/7.png" alt="">
+</a>
+</div>
+</div>
+
+</div>
+</section>
+</main>
+<div id="popup-info" aria-hidden="true" class="popup">
+<div class="popup__wrapper">
+<div class="popup__content">
+<div class="popup__head">
+<div class="popup__title">
+Інформація
+</div>
+<button data-close="" class="popup__close">
+<img src="images/svg/close.svg" alt="">
+</button>
+</div>
+<div id="popup-info-text" class="popup__body">
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footer__container">
+<div class="footer__top">
+<a href="" class="footer__logo">
+<img loading="lazy" src="images/footer-logo.png" alt="Logotype">
+</a>
+<nav class="footer__menu">
+<div class="footer__column">
+<div class="footer__title">
+Інформація
+</div>
+<ul class="footer__list">
+<li>
+<a href="terms.html">
+Угода користувача
+</a>
+</li>
+<li>
+<a href="offert.html">
+Правила користування
+</a>
+</li>
+<li>
+<a href="privacy.html">
+Політика конфіденційності
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__column">
+<div class="footer__title">
+Навігація
+</div>
+<ul class="footer__list">
+<li>
+<a href="index.htm#how">
+Як почати гру
+</a>
+</li>
+<li>
+<a href="https://forum.ukraine-gta.com.ua">
+Ігровий форум
+</a>
+</li>
+<li>
+<a href="donate.html">
+Ігровий магазин
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__column">
+<div class="footer__title">
+Контакти
+</div>
+<ul class="footer__list">
+<li>
+<a href="#">
+<span class="__cf_email__" data-cfemail="51222421213e232511243a2330383f347c3625307f3e3f3d383f34">[email&#160;protected]</span>
+</a>
+</li>
+<li>
+<a href="https://t.me/ukrainegtabot" target="_blank" rel="nofollow">
+Технічна підтримка
+</a>
+</li>
+<li>
+<a href="about.html" target="_blank">
+Про нас
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div class="footer__socials">
+<a href="https://discord.gg/bq74nAwatX" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/discord.svg" alt="Discord"> Discord
+</a>
+<a href="https://www.instagram.com/ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/instagram.svg" alt="Instagram">Instagram
+</a>
+<a href="https://www.youtube.com/channel/UCAyONHpqibQDDrCxGiYc_hQ" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/youtube.svg" alt="YouTube"> YouTube
+</a>
+<a href="https://www.tiktok.com/@ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/tiktok.svg" alt="TikTok"> TikTok
+</a>
+<a href="https://t.me/ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/telegram.svg" alt="Telegram"> Telegram
+</a>
+</div>
+</div>
+<div class="footer__info">
+<div class="footer__text">
+Україна ГТА - це український ролеплей проєкт, створений українськими розробниками на платформі MTA. Гра,
+в якій є графіка та можливості GTA 5 RP. Це український РП проєкт, створений за мотивами кримінальної
+України.
+</div>
+<div class="footer__payments">
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/visa.svg" alt="visa">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/liqpay.svg" alt="liqpay">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/mastercard.svg" alt="mastercard">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/apple-pay.svg" alt="apple-pay">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/google-pay.svg" alt="google-pay">
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="footer__copy">
+Усі права захищені © 2022 - 2024 UKRAINE GTA
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="support-text"><a href="https://t.me/UkraineGTAbot" rel="nofollow" target="_blank">
+Труднощі з грою? Тисни сюди </a></div>
+<a href="https://t.me/UkraineGTAbot" rel="nofollow" target="_blank" class="telegram-btn">
+<img loading="lazy" width="38" alt="Технічна підтримка" src="images/svg/telegram.svg">
+</a>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="25faa895d41e157ac72419b5-|49" defer=""></script><script defer="" src="beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"866724e60e055b9d","version":"2024.2.4","token":"2b2a57954ddc4091906956ec9dc83bd1"}' crossorigin="anonymous"></script>
+</body>
+</html>

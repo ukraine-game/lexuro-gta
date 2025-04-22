@@ -1,0 +1,892 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ігровий магазин - UKRAINE GTA</title>
+<meta name="description" content="Це український ролеплей проєкт, створений українськими розробниками на платформі MTA. Гра, в якій є графіка та можливості GTA 5. Це український РП проєкт, створений за мотивами кримінальної України.">
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+
+
+<script src="cdn-cgi/apps/head/xl-50JXIwRzfx8zmmYg3QRa2Wps.js"></script><style type="text/css">@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin/opsz/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin-ext/opsz/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/vietnamese/opsz/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic/opsz/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic-ext/opsz/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin-ext/opsz/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic/opsz/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/latin/opsz/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/cyrillic-ext/opsz/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito Sans;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito-sans/5.0.11/vietnamese/opsz/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:600;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:700;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:italic;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:600;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/hebrew/wght/normal.woff2);unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Open Sans;font-style:normal;font-weight:700;src:url(/cf-fonts/v/open-sans/5.0.20/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="2003979896b61982d6099e0b-module" crossorigin="" src="assets/js/main.js?updated"></script>
+<script src="jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" type="2003979896b61982d6099e0b-text/javascript"></script>
+<script src="ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="2003979896b61982d6099e0b-text/javascript"></script>
+<script async="" src="gtag/js?id=G-0BX207J77G" type="2003979896b61982d6099e0b-text/javascript"></script>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="manifest" href="webmanifest.php.html">
+<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<script type="2003979896b61982d6099e0b-text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-0BX207J77G');
+		</script>
+<div class="wrapper">
+<header class="header">
+<div class="header__container">
+<div class="header__left">
+<a href="index.htm" class="header__logo">
+<img loading="lazy" src="images/main-img/logo.png" alt="Logotype">
+</a>
+<div class="header__menu menu">
+<nav class="menu__body">
+<ul class="menu__list">
+<li class="menu__item">
+<a href="index.htm" class="menu__link">
+<svg>
+<use xlink:href="#icon-home"></use>
+</svg>
+Головна
+</a>
+</li>
+<li class="menu__item">
+<a href="https://forum.ukraine-gta.com.ua/" class="menu__link">
+<svg>
+<use xlink:href="#icon-forum"></use>
+</svg>
+Форум
+</a>
+</li>
+<li class="menu__item">
+<a href="donate.html" class="menu__link">
+<svg>
+<use xlink:href="#icon-shop"></use>
+</svg>
+Ігровий магазин
+</a>
+</li>
+</ul>
+</nav>
+<div class="menu__mob">
+<div class="header__lang">
+<select data-class-modif="lang" name="form[]" class="form">
+<option data-href="#" data-asset="/images/ukr.svg" value="1" selected="">Українська
+</option>
+
+</select>
+</div>
+<a href="cabinet/login.html" class="button button--primary">
+<img loading="lazy" src="images/svg/user.svg" alt="ОСОБИСТИЙ КАБІНЕТ">
+ОСОБИСТИЙ КАБІНЕТ
+</a>
+</div>
+</div>
+</div>
+<div class="header__right">
+<div class="header__lang">
+<select data-class-modif="lang" name="form[]" class="form">
+<option data-href="#" data-asset="/images/ukr.svg" value="1" selected="">Українська</option>
+
+</select>
+</div>
+<a href="cabinet/login.html" class="button button--primary">
+<img loading="lazy" src="images/svg/user.svg" alt="ОСОБИСТИЙ КАБІНЕТ">
+ОСОБИСТИЙ КАБІНЕТ
+</a>
+</div>
+<div class="header__right-mob">
+<div data-btn-menu="" class="header__button-menu-wrap">
+<button class="header__button-menu">
+<span></span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="page">
+<div id="succesfull_form" class="hidden"></div>
+<section data-prlx-mouse-wrapper="" class="donate">
+<div class="donate__decor">
+<img class="ibg" src="images/decor2.png" alt="">
+</div>
+<div class="donate__container">
+<div class="donate__row">
+<div class="donate__content">
+<h2 class="donate__title">
+ПОПОВНИТИ <br> РАХУНОК
+</h2>
+<form action="#" method="POST" name="donate-form" class="donate__form">
+<input type="hidden" name="donate-form-token" value="81629">
+<div class="donate__form-items">
+<div class="form-item">
+<div class="form-item__input-wrap">
+<div class="form-item__icons form-item__icons--left">
+<div class="form-item__icon ">
+<svg>
+<use xlink:href="#icon-f-other"></use>
+</svg>
+</div>
+</div>
+<input readonly="" data-server-input="" data-popup="#popup-server" value="" placeholder="Оберіть сервер" name="donate-form-server" required="" type="text">
+</div>
+</div>
+<div class="form-item">
+<div class="form-item__input-wrap">
+<div class="form-item__icons form-item__icons--left ">
+<div class="form-item__icon ">
+<svg>
+<use xlink:href="#icon-f-user"></use>
+</svg>
+</div>
+</div>
+<input placeholder="Ваш нікнейм або ID" name="donate-form-login" value="" required="" type="text">
+</div>
+</div>
+<div class="form-item form-item--donate">
+<div class="form-item__input-wrap">
+<div class="form-item__icons form-item__icons--left ">
+<div class="form-item__icon ">
+<svg>
+<use xlink:href="#icon-f-wallet"></use>
+</svg>
+</div>
+</div>
+<input data-sum-input="" placeholder="Сума" name="donate-form-amount" type="number" min="1" max="50000" required="" class="font-medium">
+<div class="form-item__icons form-item__icons--right">
+<div class="form-item__x2">
+<div class="form-item__equal">
+=
+</div>
+<div class="form-item__x2-text">
+0
+</div>
+<div class="form-item__x2-icon2">
+<img src="images/svg/monet.svg" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="donate__percentage">
+<div class="donate__percentage-items">
+<div data-percentage="500" class="donate__percentage-item">
+<div class="donate__percentage-item-value">
++5%
+</div>
+<div class="donate__percentage-item-label">від 500 грн.</div>
+</div>
+<div data-percentage="1500" class="donate__percentage-item">
+<div class="donate__percentage-item-value">
++7%
+</div>
+<div class="donate__percentage-item-label">від 1,500 грн.</div>
+</div>
+<div data-percentage="3000" class="donate__percentage-item">
+<div class="donate__percentage-item-value">
++10%
+</div>
+<div class="donate__percentage-item-label">від 3,000 грн.</div>
+</div>
+<div data-percentage="6500" class="donate__percentage-item">
+<div class="donate__percentage-item-value">
++12%
+</div>
+<div class="donate__percentage-item-label">від 6,500 грн.</div>
+</div>
+<div data-percentage="12500" class="donate__percentage-item">
+<div class="donate__percentage-item-value">
++15%
+</div>
+<div class="donate__percentage-item-label">від 12,500 грн.</div>
+</div>
+</div>
+</div>
+<div class="checkbox">
+<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="donate-form-terms">
+<label for="c_1" class="checkbox__label"><span class="checkbox__text">
+Я погоджуюсь з
+<a href="terms.html" target="_blank">угодою користувача</a>
+</span></label>
+</div>
+<button class="button button--primary">
+ПЕРЕЙТИ ДО ОПЛАТИ
+</button>
+</form>
+</div>
+<div class="donate__image-wrap">
+<div class="donate__image">
+<div data-prlx-mouse="" data-prlx-a="10" data-prlx-cx="20" data-prlx-dxr="" data-prlx-dyr="" class="donate__image-coin donate__image-coin--1">
+<img src="images/c01.svg" alt="">
+</div>
+<div data-prlx-mouse="" data-prlx-a="5" data-prlx-cx="20" data-prlx-dxr="" data-prlx-dyr="" class="donate__image-coin donate__image-coin--2">
+<img src="images/c02.svg" alt="">
+</div>
+<div data-prlx-mouse="" data-prlx-a="20" data-prlx-cx="80" data-prlx-dxr="" data-prlx-dyr="" class="donate__image-coin donate__image-coin--3">
+<img src="images/c03.svg" alt="">
+</div>
+<img srcset="images/donate%402x.png 2x" src="images/donate.png" alt="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-animate-text="" class="premium">
+<div class="premium__decor">
+<img class="ibg" src="images/decor-p.png" alt="">
+</div>
+<div class="premium__crown premium__crown--1">
+<img src="images/crown1.png" alt="">
+</div>
+<div class="premium__crown premium__crown--2">
+<img src="images/crown2.png" alt="">
+</div>
+<div class="premium__container">
+<h2 data-animate-text-item="" class="title">
+<span class="title__white">
+ОТРИМАЙ МАКСИМУМ
+</span> <br>
+<span class="title__white">
+З
+</span>
+<span class="text-gradient">
+PREMIUM СТАТУСОМ
+</span>
+</h2>
+<div class="premium__inner">
+<div class="premium__info premium__info--1">
+<div class="premium__info-number">
+1
+</div>
+<div class="premium__info-text">
+Окремий чат для <b>PREMIUM гравців</b>
+</div>
+</div>
+<div class="premium__info premium__info--2">
+<div class="premium__info-number">
+5
+</div>
+<div class="premium__info-text">
+Безкоштовний <b>щоденний набір</b>: аптечка, рем. комплект, каністра, їжа
+</div>
+</div>
+<div class="premium__info premium__info--3">
+<div class="premium__info-number">
+7
+</div>
+<div class="premium__info-text">
+<b>+25% до зарплати</b> на усіх роботах та фракціях
+</div>
+</div>
+<div class="premium__info premium__info--4">
+<div class="premium__info-number">
+9
+</div>
+<div class="premium__info-text">
+<b>Х2 швидкість</b> до лікування та прокачування навичок гравця
+</div>
+</div>
+<div class="premium__slider-wrapper">
+<div class="premium__slider swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="premium__card premium__card--silver">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>7 дні</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p03.png" alt="">
+</div>
+<a href="" data-case="279" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 279
+</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="premium__card premium__card--bronze">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>14 днів</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p02.png" alt="">
+</div>
+<a href="" data-case="499" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 499
+</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="premium__card premium__card--gold">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>30 днів</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p01.png" alt="">
+</div>
+<a href="" data-case="849" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 849
+</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="premium__card premium__card--silver">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>7 дні</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p03.png" alt="">
+</div>
+<a href="" data-case="279" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 279
+</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="premium__card premium__card--bronze">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>14 днів</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p02.png" alt="">
+</div>
+<a href="" data-case="499" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 499
+</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="premium__card premium__card--gold">
+<div class="premium__card-title">
+PREMIUM
+</div>
+<div class="premium__card-days">
+<img src="images/svg/time.svg" alt=""> <span>30 днів</span>
+</div>
+<div class="premium__card-image">
+<img src="images/p01.png" alt="">
+</div>
+<a href="" data-case="849" class="premium__card-btn button button--primary">
+Придбати за <img src="images/svg/monet.svg" alt=""> 849
+</a>
+</div>
+</div>
+</div>
+<div class="premium__navigation">
+<button class="premium__arrow premium__arrow--prev">
+<img src="images/svg/arrow-prev.svg" alt="">
+</button>
+
+<button class="premium__arrow premium__arrow--next">
+<img src="images/svg/arrow-next.svg" alt="">
+</button>
+</div>
+</div>
+</div>
+<div class="premium__bottom">
+<a data-popup="#popup-status" href="" class="premium__bottom-btn">Детальніше про статус</a>
+</div>
+</div>
+</div>
+</section>
+<section class="case">
+<div class="case__container">
+<div class="case__head">
+<h2 class="case__title">
+КЕЙСИ
+</h2>
+<div class="case__line"></div>
+</div>
+<div class="case__grid">
+<a data-case="275" href="" class="case-item case-item--violet">
+<div class="case-item__tags">
+<div class="case-item__tag case-item__tag--new">
+НОВИНКА
+</div>
+</div>
+<div class="case-item__top">
+<div class="case-item__label">Кейс</div>
+<div class="case-item__name">
+ЕЛЕКТРО-ХАУС
+</div>
+</div>
+<span class="case-item__image">
+<img src="images/case1.png" alt="">
+</span>
+<div class="case-item__price">
+<div class="case-item__price-current">
+<img src="images/svg/monet.svg" alt=""> 275
+</div>
+</div>
+</a>
+<a data-case="499" href="" class="case-item case-item--green">
+<div class="case-item__tags">
+
+</div>
+<div class="case-item__top">
+<div class="case-item__label">Кейс</div>
+<div class="case-item__name">
+УРЯДОВИЙ
+</div>
+</div>
+<span class="case-item__image">
+<img src="images/case2.png" alt="">
+</span>
+<div class="case-item__price">
+<div class="case-item__price-current">
+<img src="images/svg/monet.svg" alt=""> 499
+</div>
+
+</div>
+</a>
+<a data-case="249" href="" class="case-item case-item--pink">
+<div class="case-item__tags">
+
+</div>
+<div class="case-item__top">
+<div class="case-item__label">Кейс</div>
+<div class="case-item__name">
+КРАЛЯ
+</div>
+</div>
+<span class="case-item__image">
+<img src="images/case3.png" alt="">
+</span>
+<div class="case-item__price">
+<div class="case-item__price-current">
+<img src="images/svg/monet.svg" alt=""> 249
+</div>
+
+</div>
+</a>
+<a data-case="349" href="" class="case-item case-item--blue">
+<div class="case-item__tags">
+
+</div>
+<div class="case-item__top">
+<div class="case-item__label">Кейс</div>
+<div class="case-item__name">
+ДІЛОВИЙ
+</div>
+</div>
+<span class="case-item__image">
+<img src="images/case4.png" alt="">
+</span>
+<div class="case-item__price">
+<div class="case-item__price-current">
+<img src="images/svg/monet.svg" alt=""> 349
+</div>
+
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="case pb-115">
+<div class="case__container">
+<div class="case__head">
+<h2 class="case__title">
+АВТОМОБІЛІ
+</h2>
+<div class="case__line"></div>
+</div>
+<div class="case__row">
+<a data-case="3999" href="" class="case-item-big">
+<div class="case-item-big__tags">
+<div class="case-item-big__tag case-item-big__tag--new">НОВИНКА</div>
+<div class="case-item-big__tag case-item-big__tag--limited">ЛІМІТОВАНА ВЕРСІЯ</div>
+</div>
+<div class="case-item-big__image">
+<img src="images/game/vehicles/300x160/6533.png" alt="">
+</div>
+<div class="case-item-big__info">
+<div class="case-item-big__label">Автомобіль</div>
+<div class="case-item-big__name">BMW M5 F90</div>
+</div>
+<span class="case-item-big__button button button--primary">Придбати за <img src="images/svg/monet.svg" alt=""> 3999</span>
+<div class="case-item-big__count">
+Залишилось: <b>23 шт.</b>
+</div>
+</a>
+<div class="case__grid2">
+<a data-case="3499" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">Cadillac Escalade Platinum</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6527.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 3499
+</div>
+<div class="case-item-v2__price-old">
+4215
+</div>
+</div>
+</a>
+<a data-case="749" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">Mercedes E-Class W210</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6589.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 749
+</div>
+</div>
+</a>
+<a data-case="5770" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">BMW M3 Touring</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6570.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 5770
+</div>
+</div>
+</a>
+<a data-case="4999" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">Mercedes-Mclaren SLR</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6541.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 4999
+</div>
+</div>
+</a>
+<a data-case="2999" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">BMW X6M (F96)</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6595.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 2999
+</div>
+<div class="case-item-v2__price-old">
+4476
+</div>
+</div>
+</a>
+<a data-case="11499" href="" class="case-item-v2">
+<div class="case-item-v2__top">
+<div class="case-item-v2__label">Автомобіль</div>
+<div class="case-item-v2__name">BMW M4 2022</div>
+</div>
+<div class="case-item-v2__image">
+<img src="images/game/vehicles/300x160/6645.png" alt="">
+</div>
+<div class="case-item-v2__price">
+<div class="case-item-v2__price-current">
+<img src="images/svg/monet.svg" alt=""> 11499
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<div id="popup-status" aria-hidden="true" class="popup popup--status popup-status">
+<div class="popup__wrapper">
+<div class="popup__content">
+<div class="popup__head">
+<div class="popup__title popup__title--left">
+Чому варто придбати PREMIUM?
+</div>
+<button data-close="" class="popup__close">
+<img src="images/svg/close.svg" alt="">
+</button>
+</div>
+<div class="popup__body">
+<div class="popup-status__description">
+Придбай наш PREMIUM-статус, збільшуй свій успіх, прокачуй аккаунт вдвічі швидше. Економія часу - це
+твій секретний інгредієнт досягнень. Купи PREMIUM-статус і рухайся швидше до своїх цілей!
+</div>
+<div class="popup-status__row">
+<div class="popup-status__item popup-status__item--default">
+<div class="popup-status__item-top">
+<div class="popup-status__item-label">Статус</div>
+<div class="popup-status__item-name">Без PREMIUM</div>
+<div class="popup-status__item-image">
+<img src="images/crown3.png" alt="">
+</div>
+<div class="popup-status__item-price">
+<b>00,00</b>
+<p>₴<span>/міс.</span></p>
+</div>
+</div>
+<div class="popup-status__item-bottom">
+<ul>
+<li>Окремий чат для <b>PREMIUM гравців</b></li>
+<li><p><b>+25% до зарплати </b> на усіх роботах та фракціях</p></li>
+<li><p><b>X2 кошти</b> за виконання квестів</p></li>
+<li><p>Встановити <b>унікальний колір нікнейму</b></p></li>
+<li><p><b>Х2 до лікування та прокачування</b> навичок гравця</p></li>
+<li><p>Безкоштовний <b>щоденний набір:</b></p></li>
+<li><p>Аптечки, рем.комплект, каністра</p></li>
+</ul>
+</div>
+</div>
+<div class="popup-status__item popup-status__item--premium">
+<div class="popup-status__item-tag">
+Радимо!
+</div>
+<div class="popup-status__item-top">
+<div class="popup-status__item-label">Статус</div>
+<div class="popup-status__item-name">PREMIUM</div>
+<div class="popup-status__item-image">
+<img src="images/crown4.png" alt="">
+</div>
+<div class="popup-status__item-price">
+<b>849,00</b>
+<p>₴<span>/міс.</span></p>
+</div>
+</div>
+<div class="popup-status__item-bottom">
+<ul>
+<li>Окремий чат для <b>PREMIUM гравців</b></li>
+<li><p><b>+25% до зарплати </b> на усіх роботах та фракціях</p></li>
+<li><p><b>X2 кошти</b> за виконання квестів</p></li>
+<li><p>Встановити <b>унікальний колір нікнейму</b></p></li>
+<li><p><b>Х2 до лікування та прокачування</b> навичок гравця</p></li>
+<li><p>Безкоштовний <b>щоденний набір:</b></p></li>
+<li><p>Аптечки, рем.комплект, каністра</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="popup-server" aria-hidden="true" class="popup popup--server">
+<div class="popup__wrapper">
+<div class="popup__content">
+<div class="popup__head">
+<div class="popup__title popup__title--left">
+Оберіть сервер
+</div>
+<button data-close="" class="popup__close">
+<img src="images/svg/close.svg" alt="">
+</button>
+</div>
+<div class="popup__body">
+<div class="popup__server">
+<div class="popup__server-items">
+<div data-server-name="Центральна Україна" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s1.svg" alt="">
+</div>
+<div class="popup__server-item-name">Центральна Україна</div>
+</div>
+<div data-server-name="Західна Україна" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s2.svg" alt="">
+</div>
+<div class="popup__server-item-name">Західна Україна</div>
+</div>
+<div data-server-name="Східна Україна" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s3.svg" alt="">
+</div>
+<div class="popup__server-item-name">Східна Україна</div>
+</div>
+<div data-server-name="Північна Україна" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s4.svg" alt="">
+</div>
+<div class="popup__server-item-name">Північна Україна</div>
+</div>
+<div data-server-name="Південна Україна" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s5.svg" alt="">
+</div>
+<div class="popup__server-item-name">Південна Україна</div>
+</div>
+<div data-server-name="Тестовий сервер" class="popup__server-item">
+<div class="popup__server-item-icon">
+<img src="images/svg/s99.svg" alt="TEST">
+</div>
+<div class="popup__server-item-name">Тестовий сервер</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div id="popup-info" aria-hidden="true" class="popup">
+<div class="popup__wrapper">
+<div class="popup__content">
+<div class="popup__head">
+<div class="popup__title">
+Інформація
+</div>
+<button data-close="" class="popup__close">
+<img src="images/svg/close.svg" alt="">
+</button>
+</div>
+<div id="popup-info-text" class="popup__body">
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footer__container">
+<div class="footer__top">
+<a href="" class="footer__logo">
+<img loading="lazy" src="images/footer-logo.png" alt="Logotype">
+</a>
+<nav class="footer__menu">
+<div class="footer__column">
+<div class="footer__title">
+Інформація
+</div>
+<ul class="footer__list">
+<li>
+<a href="terms.html">
+Угода користувача
+</a>
+</li>
+<li>
+<a href="offert.html">
+Правила користування
+</a>
+</li>
+<li>
+<a href="privacy.html">
+Політика конфіденційності
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__column">
+<div class="footer__title">
+Навігація
+</div>
+<ul class="footer__list">
+<li>
+<a href="index.htm#how">
+Як почати гру
+</a>
+</li>
+<li>
+<a href="https://forum.ukraine-gta.com.ua">
+Ігровий форум
+</a>
+</li>
+<li>
+<a href="donate.html">
+Ігровий магазин
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__column">
+<div class="footer__title">
+Контакти
+</div>
+<ul class="footer__list">
+<li>
+<a href="#">
+<span class="__cf_email__" data-cfemail="fb888e8b8b94898fbb8e90899a92959ed69c8f9ad594959792959e">[email&#160;protected]</span>
+</a>
+</li>
+<li>
+<a href="https://t.me/ukrainegtabot" target="_blank" rel="nofollow">
+Технічна підтримка
+</a>
+</li>
+<li>
+<a href="about.html" target="_blank">
+Про нас
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<div class="footer__socials">
+<a href="https://discord.gg/bq74nAwatX" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/discord.svg" alt="Discord"> Discord
+</a>
+<a href="https://www.instagram.com/ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/instagram.svg" alt="Instagram">Instagram
+</a>
+<a href="https://www.youtube.com/channel/UCAyONHpqibQDDrCxGiYc_hQ" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/youtube.svg" alt="YouTube"> YouTube
+</a>
+<a href="https://www.tiktok.com/@ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/tiktok.svg" alt="TikTok"> TikTok
+</a>
+<a href="https://t.me/ukraine_gta" rel="nofollow" target="_blank" class="footer__social">
+<img loading="lazy" src="images/svg/telegram.svg" alt="Telegram"> Telegram
+</a>
+</div>
+</div>
+<div class="footer__info">
+<div class="footer__text">
+Україна ГТА - це український ролеплей проєкт, створений українськими розробниками на платформі MTA. Гра,
+в якій є графіка та можливості GTA 5 RP. Це український РП проєкт, створений за мотивами кримінальної
+України.
+</div>
+<div class="footer__payments">
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/visa.svg" alt="visa">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/liqpay.svg" alt="liqpay">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/mastercard.svg" alt="mastercard">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/apple-pay.svg" alt="apple-pay">
+</div>
+<div class="footer__payment">
+<img loading="lazy" src="images/svg/google-pay.svg" alt="google-pay">
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="footer__copy">
+Усі права захищені © 2022 - 2024 UKRAINE GTA
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="support-text"><a href="https://t.me/UkraineGTAbot" rel="nofollow" target="_blank">
+Труднощі з оплатою? Тисни сюди </a></div>
+<a href="https://t.me/UkraineGTAbot" rel="nofollow" target="_blank" class="telegram-btn">
+<img loading="lazy" width="38" alt="Технічна підтримка" src="images/svg/telegram.svg">
+</a>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2003979896b61982d6099e0b-|49" defer=""></script><script defer="" src="beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"866725019c545b9d","version":"2024.2.4","token":"2b2a57954ddc4091906956ec9dc83bd1"}' crossorigin="anonymous"></script>
+</body>
+</html>
