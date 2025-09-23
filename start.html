@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантаження...</title>
+    <style>
+        /* Стилі для відображення зображення на весь екран */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        // Функція для перенаправлення через 3 секунди
+        setTimeout(function() {
+            window.location.href = "index.htm";
+        }, 3000);  // 3 секунди
+    </script>
+</head>
+<body>
+    <img src="images/start.png" alt="Зображення завантаження">
+</body>
+</html>
